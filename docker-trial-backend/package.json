@@ -1,0 +1,21 @@
+{
+  "name": "docker-trial-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker-build": "docker build -t docker-trial-backend .",
+    "docker": "docker run -d --rm -v %cd%/:/app -p 3001:3001 docker-trial-backend",
+    "dev": "nodemon -L --inspect=0.0.0.0 server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}
